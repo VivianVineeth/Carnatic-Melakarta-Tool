@@ -643,7 +643,7 @@ export default function App(): JSX.Element {
           </button>
           <h1 className="mk-title">
             <span className="mk-ornament">✦ </span>
-            Melakarta Explorer
+            Melakarta Converter
             <span className="mk-ornament"> ✦</span>
           </h1>
           <p className="mk-subtitle">72 Parent Scales of Carnatic Music</p>
@@ -681,7 +681,7 @@ export default function App(): JSX.Element {
               {KEY_OPTIONS.map((k) => (
                 <button
                   key={k}
-                  onClick={() => { setKey(k); setStep(2); }}
+                  onClick={() => { playSineTone(freqForSemitone(12 + KEY_TO_SEMITONE[k]), 0.6); setKey(k); setStep(2); }}
                   className={`mk-key-btn${k === key ? " selected" : ""}`}
                 >
                   {k}
