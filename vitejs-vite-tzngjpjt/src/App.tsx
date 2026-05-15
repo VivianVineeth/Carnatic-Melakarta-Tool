@@ -393,7 +393,7 @@ html, body {
   font-family: inherit; cursor: pointer;
   transition: all var(--ease); min-width: 58px; text-align: center;
 }
-.mk-swara-btn:hover:not(.fixed):not(.disabled) {
+.mk-swara-btn:hover:not(.fixed):not(.disabled):not(.selected) {
   background: var(--hover-bg); border-color: var(--accent);
   transform: translateY(-2px); box-shadow: var(--sh-sm);
 }
